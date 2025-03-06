@@ -1,1 +1,9 @@
-<p>search-bar works!</p>
+<fieldset
+  class="fieldset w-md bg-base-200 border border-base-300 p-4 rounded-box"
+>
+  <legend class="fieldset-legend">Pesquisa de filmes</legend>
+  <div class="join">
+    <input type="text" class="input join-item" placeholder="Nome do filme" [(ngModel)]="inputText" />
+    <button class="btn join-item" (click)="onSearch()">Pesquisar</button>
+  </div>
+</fieldset>
