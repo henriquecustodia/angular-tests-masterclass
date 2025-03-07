@@ -3,7 +3,19 @@
 >
   <legend class="fieldset-legend">Pesquisa de filmes</legend>
   <div class="join">
-    <input type="text" class="input join-item" placeholder="Nome do filme" [(ngModel)]="inputText" />
-    <button class="btn join-item" (click)="onSearch()">Pesquisar</button>
+    <input
+      data-testid="inputText-searchBar"
+      type="text"
+      class="input join-item"
+      placeholder="Nome do filme"
+      [(ngModel)]="inputText"
+    />
+    <button
+      data-testid="searchBtn-searchBar"
+      class="btn join-item"
+      (click)="onSearch()"
+    >
+      Pesquisar
+    </button>
   </div>
 </fieldset>
