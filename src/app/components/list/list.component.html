@@ -1,1 +1,10 @@
-<p>list works!</p>
+<ul class="list bg-base-100 rounded-box shadow-md">
+  @for (item of data(); track item.title) {
+  <li class="list-row">
+    <!-- <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp"/></div> -->
+    <div>
+      <div data-testid="dataItem-list">{{ item.title }}</div>
+    </div>
+  </li>
+  }
+</ul>

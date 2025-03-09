@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+export interface Item {
+  title: string;
+}
 
 @Component({
   selector: 'app-list',
@@ -7,4 +11,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
-export class ListComponent {}
+export class ListComponent {
+  data = input.required<Item[]>();
+}
